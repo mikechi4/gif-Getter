@@ -1,5 +1,5 @@
 angular.module('myApp')
-  .controller('mainCtrl', function($scope, mainService, $state){
+  .controller('searchCtrl', function($scope, mainService, $state, $stateParams){
 
     $scope.getGifs = function(tag){
       mainService.getGifs(tag).then(function(response){
@@ -12,6 +12,5 @@ angular.module('myApp')
         }
       })
     }
-
   })
 ;

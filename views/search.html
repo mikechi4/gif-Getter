@@ -1,4 +1,8 @@
 
-  <div ng-repeat="gif in gifs" class="gif-results">
-    <a ui-sref="gifInfo"><img src={{gif.images.fixed_height.url}} alt="" /><a>
-  </div>
+
+    <div ng-repeat="gif in gifs" class="gif-results">
+      <a ui-sref="info({id: gif.id})"><img src={{gif.images.fixed_height.url}} alt="" /><a>
+      <p>
+        the id is {{gif.id}}
+      </p>
+    </div>

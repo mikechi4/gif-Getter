@@ -10,11 +10,16 @@ angular.module('myApp',['ui.router'])
       .state('search', {
         url:'/search',
         templateUrl: '../views/search.html',
-        controller: 'mainCtrl'
+        controller: 'searchCtrl'
       })
       .state('noResults', {
         url:'/noResults',
         templateUrl: '../views/noResults.html'
+      })
+      .state('info', {
+        url: '/info/:id',
+        templateUrl: '../views/info.html',
+        controller: 'infoCtrl'
       })
   })
 ;
