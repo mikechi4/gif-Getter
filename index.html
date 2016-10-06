@@ -11,11 +11,10 @@
     <div class="main-container">
       <h3>Search for a gif</h3>
       <input type="text" placeholder="Search for a tag" ng-model="tag">
-      <button type="button" ng-click="getGifs(tag)" ui-sref="search">Submit</button>
+      <button type="button" ng-click="getGifs(tag)">Submit</button>
+
+      <ui-view></ui-view>
     </div>
-
-    <ui-view></ui-view>
-
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script src="js/app.js"></script>

@@ -12,10 +12,9 @@ angular.module('myApp',['ui.router'])
         templateUrl: '../views/search.html',
         controller: 'mainCtrl'
       })
-      // .state('gifInfo', {
-      //   url:'/gif/:id',
-      //   templateUrl: '../views/searchCtrl.html',
-      //   controller: 'searchCtrl'
-      // })
+      .state('noResults', {
+        url:'/noResults',
+        templateUrl: '../views/noResults.html'
+      })
   })
 ;
