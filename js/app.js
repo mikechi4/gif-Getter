@@ -3,9 +3,19 @@ angular.module('myApp',['ui.router'])
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-      .state('home',{
+      .state('home', {
         url: '/',
-        templateUrl: '/views/mainCtrl.html'
+        templateUrl:'../views/about.html'
       })
+      .state('search', {
+        url:'/search',
+        templateUrl: '../views/search.html',
+        controller: 'mainCtrl'
+      })
+      // .state('gifInfo', {
+      //   url:'/gif/:id',
+      //   templateUrl: '../views/searchCtrl.html',
+      //   controller: 'searchCtrl'
+      // })
   })
 ;

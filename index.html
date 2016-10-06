@@ -11,7 +11,7 @@
     <div class="main-container">
       <h3>Search for a gif</h3>
       <input type="text" placeholder="Search for a tag" ng-model="tag">
-      <button type="button" ng-click="getGifs(tag)">Submit</button>
+      <button type="button" ng-click="getGifs(tag)" ui-sref="search">Submit</button>
     </div>
 
     <ui-view></ui-view>
