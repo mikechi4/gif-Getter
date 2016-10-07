@@ -15,12 +15,17 @@ input{
   outline: none;
 }
 
+hr {
+  border-top: 1px solid #9933FF;
+}
+
 .main-content {
   text-align: center
 }
 
 .results{
   padding-bottom: 15px;
+
 }
 
 .title{
@@ -91,4 +96,15 @@ input{
 
 .body-text{
   color: #C1C1C1;
+}
+
+.line {
+  padding: 2px;
+}
+
+ .results:nth-child(odd) a:hover{
+  outline: 2px solid #00A8D3;
+}
+ .results:nth-child(even) a:hover{
+  outline: 2px solid #00FF99;
 }
