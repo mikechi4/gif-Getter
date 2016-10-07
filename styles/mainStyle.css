@@ -3,6 +3,18 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+button{
+  outline: none;
+}
+
+input{
+  outline: none;
+}
+
 .main-content {
   text-align: center
 }
@@ -15,6 +27,7 @@ body{
   font-family: 'Orbitron', sans-serif;
   font-size: 64px;
   color: white;
+  margin-left: 10%;
 }
 
 .container{
@@ -38,7 +51,6 @@ body{
 .search-box{
   width: 35%;
   height: 5vh;
-
 }
 
 .search-btn{
@@ -48,4 +60,35 @@ body{
   color: white;
   margin-left: -5%;
   border: none;
+}
+
+.gif-info {
+  background: #212121;
+  width: 80%;
+  margin: 0 auto;
+  height: 15vh;
+  padding: 10px 20px 0 20px;
+}
+
+.selected-content {
+  margin-bottom: 1%;
+}
+
+#gif-info-title {
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#url {
+  width: 60%;
+}
+
+.fa-frown-o {
+  font-size: 4em;
+}
+
+.body-text{
+  color: #C1C1C1;
 }

@@ -1,5 +1,12 @@
-
-<img src={{gif.images.fixed_height.url}} alt="" /> <br>
-<input type="text" name="name" value="{{gif.images.fixed_height.url}}">
-<button type="button" name="button">Copy the Url here!</button>
-<button type="button" name="button" ng-click="addToFav(favorite)">Add to Favorites</button>
+<div class="selected-content">
+  <img src={{gif.images.fixed_height.url}} alt="" /> 
+</div>
+<br>
+<div class="gif-info">
+  <h2 id="gif-info-title">Share this gif</h2>
+  <div class="url-info">
+    <input type="text" name="name" id="url" value="{{gif.images.fixed_height.url}}">
+    <button type="button" name="button">Copy the Url here!</button>
+    <!-- <button type="button" name="button" ng-click="addToFav(favorite)">Add to Favorites</button> -->
+  </div>
+</div>
