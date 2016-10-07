@@ -12,9 +12,5 @@ angular.module('myApp')
         }
       })
     }
-
-    // $scope.giveBorder = function(){
-    //   alert('HELLOOO');
-    // }
   })
 ;
