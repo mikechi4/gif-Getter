@@ -1,7 +1,51 @@
+body{
+  background: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .main-content {
   text-align: center
 }
 
 .results{
   padding-bottom: 15px;
+}
+
+.title{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 64px;
+  color: white;
+}
+
+.container{
+  margin-top: 40px;
+}
+
+.dot{
+  color:#FF6666;
+}
+
+.dash{
+  color: #00FF99;
+}
+
+.tagline{
+  font-size: 18px;
+  font-style: italic;
+  color: #5C5C5C;
+}
+
+.search-box{
+  width: 35%;
+  height: 5vh;
+
+}
+
+.search-btn{
+  width: 5%;
+  height: 5vh;
+  background: #BDBDBD;
+  color: white;
+  margin-left: -5%;
+  border: none;
 }

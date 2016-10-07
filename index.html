@@ -8,28 +8,17 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/styles/reset.css" media="screen" title="no title">
     <link rel="stylesheet" href="/styles/mainStyle.css" media="screen" title="no title">
-
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta charset="utf-8">
-    <title>.gifTer</title>
+    <title>.gifty | Add to the conversation</title>
   </head>
   <body ng-controller="searchCtrl">
     <div class="container">
-      <div class="jumbotron">
-
-
         <header-directive></header-directive>
         <div class="main-content">
-          <h3>Search for a gif</h3>
-          <input type="text" placeholder="Search for a tag" ng-model="tag">
-          <button type="button" class="btn btn-primary" ng-click="getGifs(tag)">Submit</button>
-          <hr>
-
-
-        </div>
-      </div>
-      <div class="main-content">
         <ui-view></ui-view>
-      </div>
+        </div>
 
     </div>
 
