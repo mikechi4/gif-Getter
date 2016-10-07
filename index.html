@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
   <head>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/styles/reset.css" media="screen" title="no title">
+    <link rel="stylesheet" href="/styles/mainStyle.css" media="screen" title="no title">
+
     <meta charset="utf-8">
-    <title>.gif Getter</title>
+    <title>.gifTer</title>
   </head>
   <body ng-controller="searchCtrl">
-    <header>
-        <h1>Get.gif</h1>
-    </header>
-    <div class="main-container">
-      <h3>Search for a gif</h3>
-      <input type="text" placeholder="Search for a tag" ng-model="tag">
-      <button type="button" ng-click="getGifs(tag)">Submit</button>
+    <div class="container">
+      <div class="jumbotron">
 
-      <ui-view></ui-view>
+
+        <header-directive></header-directive>
+        <div class="main-content">
+          <h3>Search for a gif</h3>
+          <input type="text" placeholder="Search for a tag" ng-model="tag">
+          <button type="button" class="btn btn-primary" ng-click="getGifs(tag)">Submit</button>
+          <hr>
+
+
+        </div>
+      </div>
+      <div class="main-content">
+        <ui-view></ui-view>
+      </div>
 
     </div>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script src="js/app.js"></script>
     <script src="js/searchCtrl.js"></script>
     <script src="js/mainService.js"></script>
     <script src="js/infoCtrl.js"></script>
+    <script src="js/directives/headerDirective.js"></script>
   </body>
 </html>
