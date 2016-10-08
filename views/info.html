@@ -5,7 +5,7 @@
 <div class="gif-info">
   <h2 id="gif-info-title">Share this gif</h2>
   <div class="url-info">
-    <input type="text" name="name" id="url" value="{{gif.images.fixed_height.url}}">
-    <!-- <button type="button" name="button" ng-click="addToFav(favorite)">Add to Favorites</button> -->
+    <input type="text" name="name" id="url" value="{{gif.images.fixed_height.url}}" >
+      <button type="button" name="button" ng-click="addToFavorites(gif.id, gif.images.fixed_height.url)">Add to Favorites</button>
   </div>
 </div>
