@@ -21,5 +21,10 @@ angular.module('myApp',['ui.router'])
         templateUrl: '../views/info.html',
         controller: 'infoCtrl'
       })
+      .state('favorites', {
+        url: '/favorites',
+        templateUrl: '../views/favorites.html',
+        controller: 'favoritesCtrl'
+      })
   })
 ;

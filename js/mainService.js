@@ -24,8 +24,6 @@ angular.module('myApp')
         id: newId,
         url: newUrl
       };
-      console.log("fav array " +favorites);
-      console.log("fav length " +favorites.length);
 
       if(favorites.length === 0){
         favorites.push(newFavorite);
@@ -35,10 +33,14 @@ angular.module('myApp')
             return alert('this has already been favorited');
           } else {
             favorites.push(newFavorite);
-            return alert('added to favorites');            
+            return alert('added to favorites');
           }
         }
       }
+    }
+
+    this.getFavorites = function() {
+      return favorites;
     }
   })
 ;
