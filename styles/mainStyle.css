@@ -58,14 +58,20 @@ hr {
   height: 35px;
 }
 
+.button{
+  background: #BDBDBD;
+    border: none;
+}
 .search-btn{
   width: 5%;
   height: 35px;
-  background: #BDBDBD;
   color: white;
   margin-left: -5%;
-  border: none;
   padding-top: 4px;
+}
+
+.button:hover{
+  background: #5C5C5C;
 }
 
 .gif-info {
@@ -109,3 +115,24 @@ hr {
  .results:nth-child(even) a:hover{
   outline: 2px solid #00FF99;
 }
+
+.fav-btn:active {
+  color: yellow;
+}
+
+#nav-fav {
+  float: right;
+  /*border-bottom: 1px solid #FFF35C;*/
+  padding: 7px;
+  color: #FFF35C;
+  letter-spacing: 1px;
+}
+
+#nav-fav:hover {
+  border-bottom: 1px solid #FFF35C;
+  transition: .2s
+}
+
+/*.add-alert {
+  visibility: hidden;
+}*/

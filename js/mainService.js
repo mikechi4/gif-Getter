@@ -27,6 +27,7 @@ angular.module('myApp')
 
       if(favorites.length === 0){
         favorites.push(newFavorite);
+        return alert('added to favorites');
       } else {
         for(var i = favorites.length-1; i >= 0; i--){
           if(newId === favorites[i].id){
@@ -41,6 +42,14 @@ angular.module('myApp')
 
     this.getFavorites = function() {
       return favorites;
+    }
+
+    this.removeFromFavs = function(id) {
+      for(var i = 0; i < favorites.length; i++) {
+        if(id === favorites[i].id) {
+          favorites.splice(i, 1);
+        }
+      }
     }
   })
 ;
