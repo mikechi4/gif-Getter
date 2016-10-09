@@ -2,7 +2,7 @@
     <div ng-repeat="fav in favorites" class="col-sm-6 col-xs-12 results" >
         <a ui-sref="info({id: fav.id})"><img src={{fav.url}} class="line"/></a>
           <p>
-          <button type="button" class="button" ng-click="removeFromFavs(fav.id)">Remove</button>
+          <button type="button" class="del-btn button" ng-click="removeFromFavs(fav.id)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
           </p>
 
     </div>

@@ -26,15 +26,13 @@ angular.module('myApp')
       };
 
       if(favorites.length === 0){
-        favorites.push(newFavorite);
-        return alert('added to favorites');
+        return favorites.push(newFavorite);
       } else {
         for(var i = favorites.length-1; i >= 0; i--){
           if(newId === favorites[i].id){
             return alert('this has already been favorited');
           } else {
-            favorites.push(newFavorite);
-            return alert('added to favorites');
+            return favorites.push(newFavorite);
           }
         }
       }

@@ -78,8 +78,8 @@ hr {
   background: #212121;
   width: 80%;
   margin: 0 auto;
-  height: 15vh;
-  padding: 10px 20px 0 20px;
+  height: 20vh;
+  padding: 5px 20px 0 20px;
 }
 
 .selected-content {
@@ -133,6 +133,15 @@ hr {
   transition: .2s
 }
 
-/*.add-alert {
+.confirmation {
   visibility: hidden;
-}*/
+  color: white;
+}
+
+.del-btn{
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  margin-top: 5px;
+}
