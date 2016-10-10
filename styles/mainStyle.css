@@ -60,7 +60,8 @@ hr {
 
 .button{
   background: #BDBDBD;
-    border: none;
+  border: none;
+  color: white;
 }
 .search-btn{
   width: 5%;
@@ -78,7 +79,7 @@ hr {
   background: #212121;
   width: 80%;
   margin: 0 auto;
-  height: 20vh;
+  height: 120px;
   padding: 5px 20px 0 20px;
 }
 

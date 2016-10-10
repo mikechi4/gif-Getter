@@ -2,5 +2,5 @@
     <div ng-repeat="gif in gifs" class="col-sm-6 col-xs-12 results" >
         <a ui-sref="info({id: gif.id})"><img src={{gif.images.fixed_height.url}} class="line"/><a>
     </div>
-    <button ng-click="getGifs(serviceTag)" name="button">Click to see more</button>
+    <button ng-click="getGifs(serviceTag)" class="button"><i class="fa fa-angle-double-down" aria-hidden="true"></i></button>
 </div>
