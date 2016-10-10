@@ -11,7 +11,5 @@ angular.module('myApp')
     //add to favorites
     $scope.addToFavorites = function(id, url) {
       mainService.addToFavorites(id, url);
-      console.log("passed id " +id);
-      console.log("passed url " +url);
     }
   })

@@ -1,9 +1,17 @@
 angular.module('myApp')
 
-  .service('mainService', function($http){
+  .service('mainService', function($http, localStorageService){
     var giphyUrl = "http://api.giphy.com/v1/gifs/search?q=";
     var idUrl = "http://api.giphy.com/v1/gifs/"
     var favorites = [];
+
+    if(localStorageService.get('favorites')){
+      favorites = localStorageService.get('favorites');
+
+    } else{
+      localStorageService.store('favorites', favorites);
+    }
+    console.log(favorites);
 
     this.getGifs = function(tag){
       return $http({
@@ -26,19 +34,23 @@ angular.module('myApp')
       };
 
       if(favorites.length === 0){
-        return favorites.push(newFavorite);
+        favorites.push(newFavorite);
+        localStorageService.store('favorites', favorites);
+        return favorites;
       } else {
         for(var i = favorites.length-1; i >= 0; i--){
           if(newId === favorites[i].id){
             return alert('this has already been favorited');
-          } else {
-            return favorites.push(newFavorite);
           }
         }
+        favorites.push(newFavorite);
+        localStorageService.store('favorites', favorites);
+        return favorites;
       }
     }
 
     this.getFavorites = function() {
+      var favorites = localStorageService.get('favorites')
       return favorites;
     }
 
