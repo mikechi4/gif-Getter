@@ -11,7 +11,6 @@ angular.module('myApp')
     } else{
       localStorageService.store('favorites', favorites);
     }
-    console.log(favorites);
 
     this.getGifs = function(tag){
       return $http({
@@ -55,11 +54,14 @@ angular.module('myApp')
     }
 
     this.removeFromFavs = function(id) {
+      var favorites = localStorageService.get('favorites')
       for(var i = 0; i < favorites.length; i++) {
         if(id === favorites[i].id) {
           favorites.splice(i, 1);
+          localStorageService.store('favorites',favorites);
         }
       }
+      return favorites;
     }
   })
 ;

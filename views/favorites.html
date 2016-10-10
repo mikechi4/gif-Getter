@@ -1,8 +1,8 @@
 <div class="row">
     <div ng-repeat="fav in favorites" class="col-sm-6 col-xs-12 results" >
-        <a ui-sref="info({id: fav.id})"><img src={{fav.url}} class="line"/></a>
+        <a ui-sref="info({id: fav.id})" class="fav-gif"><img src={{fav.url}} class="line"/></a>
           <p>
-          <button type="button" class="del-btn button" ng-click="removeFromFavs(fav.id)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+          <button type="button" class="del-btn button fav-gif" ng-click="removeFromFavs(fav.id)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
           </p>
 
     </div>
