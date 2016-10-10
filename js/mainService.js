@@ -4,6 +4,9 @@ angular.module('myApp')
     var giphyUrl = "http://api.giphy.com/v1/gifs/search?q=";
     var idUrl = "http://api.giphy.com/v1/gifs/"
     var favorites = [];
+    this.term = '';
+    var service = this;
+    var limit = 0;
 
     if(localStorageService.get('favorites')){
       favorites = localStorageService.get('favorites');
@@ -13,9 +16,17 @@ angular.module('myApp')
     }
 
     this.getGifs = function(tag){
+      var padge = '';
+      if(service.term === tag){
+        limit += 24;
+        padge = '&offset=' + limit;
+      } else{
+        service.term = tag;
+        limit = 0;
+      }
       return $http({
         method:'GET',
-        url: giphyUrl+tag+'&api_key=dc6zaTOxFJmzC'
+        url: giphyUrl+tag+'&limit=24' + padge + '&api_key=dc6zaTOxFJmzC'
       })
     }
 
