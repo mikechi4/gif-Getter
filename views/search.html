@@ -1,3 +1,5 @@
+<h3 class='title'><span class="green">{{count.pagination.total_count}}</span> <span class="red">.</span>gifs found</h3>
+
 <div class="row">
     <div ng-repeat="gif in gifs" class="col-sm-6 col-xs-12 results" >
         <a ui-sref="info({id: gif.id})"><img src={{gif.images.fixed_height.url}} class="line"/><a>

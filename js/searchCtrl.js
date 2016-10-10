@@ -5,6 +5,7 @@ angular.module('myApp')
     $scope.getGifs = function(tag){
       mainService.getGifs(tag).then(function(response){
         $scope.gifs = response.data.data;
+        $scope.count = response.data;
         $scope.tag = '';
         if(response.data.data.length > 0) {
           $state.go('search')
