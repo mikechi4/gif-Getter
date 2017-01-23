@@ -21,4 +21,4 @@ add/remove gifs to a favorites list.
 
 
 <h3>Screenshots</h3>
-To view screenshots from this project, please visit this <a href=">link</a>
+To view screenshots from this project, please visit this <a href="http://imgur.com/a/shyga">link</a>
